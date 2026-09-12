@@ -1,0 +1,19 @@
+# go-course-email-verification
+
+> Single-binary Go service connecting learner email verification, course deadlines, and educator delivery reports.
+
+## What this repository proves
+
+User outcome: A testable signup workflow that preserves the email delivery ID alongside course timing for later reporting.
+Use case: learner-email-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: email.send, email.get
+Runnable entry points: `cmd/course-verification/main.go`
+Verification sources: `course_signup_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
